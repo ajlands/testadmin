@@ -1,0 +1,1 @@
+az vm extension set --resource-group Test_ResourceGroup --vm-name linuxvm --name customScript --publisher Microsoft.Azure.Extensions --settings customscript.json
