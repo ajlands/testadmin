@@ -1,3 +1,5 @@
+#this will be ran within the Cloud init portion of creating a new vm in Azure
+
 #cloud-config
 package_upgrade: true
 packages:
