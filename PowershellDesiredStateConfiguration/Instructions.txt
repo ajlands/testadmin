@@ -1,0 +1,18 @@
+Install InstallWebconfig.psd1
+WebRole.zip
+
+Within the storage account -> and a new scripts container -> upload the top 2 files
+
+After that, go to extensions for the linux vm -> add -> PowerShell Desired State Configuration -> Browse in the storage container for the script
+file->choose the zip file.  Module-qualified Name of Configuration = grab the Name after Configuration in the top file of the WebRole script, paste
+into the box and add WebRole.ps1\ at the beginning.  So, WebRole.ps1\DScConfiguration
+
+After that we need to add the configuration file for Configuration Data PSD1 File.
+
+Go to the same storage location as above and choose the InstallWebconfig.psd1 file
+
+Put in 2.76 for the Version number and select OK
+
+Check Extensions about 5 minutes later to verify that the provisioning succeeded 
+
+Finally, test by entering the public URL in a web browser to verify you get the base IIS page.
