@@ -1,5 +1,5 @@
 #this will be ran within the Cloud init portion of creating a new vm in Azure
-
+#will enable web server for linux vm
 #cloud-config
 package_upgrade: true
 packages:
